@@ -442,29 +442,62 @@ ezfy = (function () {
       .insertAdjacentHTML("beforeend", filteredTags);
   }
 
-  function portfolioTagFilterClickListener() {
+  function portfolioTagHandleOnClick() {
     const tagsWidget = document.getElementById("tagsWidget");
-    const tags = tagsWidget.querySelectorAll("[data-tag-name]");
+    const allTags = tagsWidget.querySelectorAll("[data-tag-name]");
 
-    const assignActiveTag = () => {
+    const highlightChosenFilter = () => {
       const activeTag = tagsWidget.querySelector(".tags-widget-item--active");
       if (activeTag) {
         activeTag.classList.remove("tags-widget-item--active");
       }
     };
 
-    const hideNotChosenTags = () => {};
+    const showAllPortfolioItems = () => {
+      const hiddenItems = document.querySelectorAll(".portfolio-item--hide");
+
+      if (!hiddenItems) {
+        return;
+      }
+
+      for (let each of hiddenItems) {
+        each.classList.remove("portfolio-item--hide");
+      }
+    };
+
+    const hideNotChosenPortfolioItems = (tag) => {
+      const items = document.querySelectorAll("[data-portfolio-item-tags]");
+
+      if (tag === "all") {
+        return showAllPortfolioItems();
+      }
+
+      for (let each of items) {
+        const tags = each
+          .getAttribute("data-portfolio-item-tags")
+          .split(",")
+          .map((e) => e.trim());
+        const result = tags.includes(tag);
+
+        if (!result) {
+          each.classList.add("portfolio-item--hide");
+        }
+      }
+    };
 
     const listenForClicks = (() => {
-      for (let each of tags) {
+      for (let each of allTags) {
         each.addEventListener("click", function (e) {
           e.preventDefault();
           const el = e.target;
 
-          assignActiveTag();
+          highlightChosenFilter();
 
           const tag = el.getAttribute("data-tag-name");
           el.classList.add("tags-widget-item--active");
+
+          showAllPortfolioItems();
+          hideNotChosenPortfolioItems(tag);
         });
       }
     })();
@@ -477,7 +510,7 @@ ezfy = (function () {
         lazyLoadVideos();
         addTagsToPortfolioItems();
         addTagsToPortfolioFilter();
-        portfolioTagFilterClickListener();
+        portfolioTagHandleOnClick();
       });
 
       window.onresize = function (event) {};

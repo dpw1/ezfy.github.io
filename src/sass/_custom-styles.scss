@@ -1,3 +1,10 @@
+/* VARIABLES start
+=============================================== */
+$purple: #6610f2;
+$accent: $purple;
+/* VARIABLES start
+=============================================== */
+
 /* NAVBAR start
 =============================================== */
 #navbarSection {
@@ -132,7 +139,7 @@
     justify-content: center;
     max-width: 250px;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 6px;
     overflow: hidden;
   }
 
@@ -214,7 +221,7 @@
     flex-wrap: wrap;
     li {
       margin-right: 10px;
-      color: #6610f2;
+      color: $accent;
       font-weight: 300;
       font-size: 11px;
       letter-spacing: 1.5px;
@@ -257,17 +264,13 @@
     }
   }
   .portfolio-item {
-    transition: all 0.55s;
+    transition: all 0.2s;
     transition-delay: 0;
     display: block;
+    height: auto;
   }
   .portfolio-item--hide {
-    width: 0px;
-    flex: 0;
-    opacity: 0;
-    padding: 0;
-    transition: flex 0.85s linear, width 0.1s linear, opacity 0.45s linear;
-    transition-delay: 0;
+    display: none;
   }
   .tags-widget-item--active {
     color: #7c4fe0 !important;
