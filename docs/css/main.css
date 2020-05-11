@@ -30187,7 +30187,7 @@ button.slick-next.slick-arrow:hover:after {
 
 /* line 513, src/sass/_custom-styles.scss */
 #footerSection .footer-image {
-  max-width: 450px;
+  max-width: 570px;
   border-radius: 5px;
   width: 100%;
 }
@@ -30367,6 +30367,18 @@ video {
   transform: translateX(-50%);
 }
 
+@media (max-width: 767px) {
+  /* line 661, src/sass/_custom-styles.scss */
+  .fancybox-slide.fancybox-slide--video {
+    padding: 0 !important;
+  }
+  /* line 665, src/sass/_custom-styles.scss */
+  .fancybox-video,
+  .fancybox-content {
+    width: 100% !important;
+  }
+}
+
 /* ALL PAGES end
 =============================================== */
 /* ANIMATIONS start
@@ -30388,7 +30400,7 @@ video {
   }
 }
 
-/* line 674, src/sass/_custom-styles.scss */
+/* line 685, src/sass/_custom-styles.scss */
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -30412,7 +30424,7 @@ video {
   }
 }
 
-/* line 687, src/sass/_custom-styles.scss */
+/* line 698, src/sass/_custom-styles.scss */
 .fade-out {
   -webkit-animation: fade-out 0.85s ease both;
   animation: fade-out 0.85s ease both;

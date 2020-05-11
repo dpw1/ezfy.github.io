@@ -511,7 +511,7 @@
   }
 
   .footer-image {
-    max-width: 450px;
+    max-width: 570px;
     border-radius: 5px;
     width: 100%;
   }
@@ -654,6 +654,17 @@ video {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .fancybox-slide.fancybox-slide--video {
+    padding: 0 !important;
+  }
+
+  .fancybox-video,
+  .fancybox-content {
+    width: 100% !important;
   }
 }
 
