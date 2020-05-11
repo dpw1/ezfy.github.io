@@ -244,7 +244,7 @@
     lazyLoad: "ondemand",
     dots: false,
     arrows: true,
-    speed: 2000,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
@@ -260,7 +260,7 @@
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
