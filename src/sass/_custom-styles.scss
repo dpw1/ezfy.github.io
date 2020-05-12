@@ -296,7 +296,7 @@ $accent: $purple;
   #portfolio {
     img {
       &:not([src]) {
-        min-height: 185px;
+        min-height: calc(100vw / 6.88);
       }
     }
   }
@@ -669,6 +669,14 @@ video {
   .fancybox-content {
     width: 100% !important;
   }
+}
+
+section[id]:not(#footerSection) {
+  z-index: 2;
+}
+
+#footerSection {
+  z-index: -2;
 }
 
 /* ALL PAGES end

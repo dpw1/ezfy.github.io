@@ -29920,7 +29920,7 @@ img {
 @media (min-width: 767px) {
   /* line 298, src/sass/_custom-styles.scss */
   #portfolio img:not([src]) {
-    min-height: 185px;
+    min-height: calc(100vw / 6.88);
   }
 }
 
@@ -30373,6 +30373,16 @@ video {
   }
 }
 
+/* line 674, src/sass/_custom-styles.scss */
+section[id]:not(#footerSection) {
+  z-index: 2;
+}
+
+/* line 678, src/sass/_custom-styles.scss */
+#footerSection {
+  z-index: -2;
+}
+
 /* ALL PAGES end
 =============================================== */
 /* ANIMATIONS start
@@ -30394,7 +30404,7 @@ video {
   }
 }
 
-/* line 688, src/sass/_custom-styles.scss */
+/* line 696, src/sass/_custom-styles.scss */
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -30418,7 +30428,7 @@ video {
   }
 }
 
-/* line 701, src/sass/_custom-styles.scss */
+/* line 709, src/sass/_custom-styles.scss */
 .fade-out {
   -webkit-animation: fade-out 0.85s ease both;
   animation: fade-out 0.85s ease both;
