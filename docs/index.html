@@ -27,8 +27,8 @@
   <link rel="stylesheet" href="css/main.min.css" />
 
   <!-- EMAILJS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js" async></script>
-  <script type="text/javascript" async>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js" defer></script>
+  <script type="text/javascript" defer>
     (function () {
       emailjs.init("user_HHZWA8ZSp91dPncwFt4CE");
     })();
@@ -38,7 +38,7 @@
 <body>
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <script async>
+  <script defer>
     window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
