@@ -77,6 +77,8 @@ $xxxs: 500px;
     max-height: unset;
     height: 113vh !important;
     padding-bottom: 12vh;
+    align-items: flex-start !important;
+    padding-top: 63px;
   }
 
   @media (max-width: $xxs) {
@@ -85,7 +87,7 @@ $xxxs: 500px;
   }
 
   @media (max-height: 720px) {
-    height: 125vh !important;
+    height: 115vh !important;
   }
 
   @media (max-height: 598px) {
