@@ -115,11 +115,12 @@
                 <a class="nav-link scroll" href="#about" data-scroll-offset="-60">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link scroll" href="#portfolio" data-scroll-offset="-40">Portfolio</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link scroll" href="#reviews" data-scroll-offset="-40">Reviews</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#portfolio" data-scroll-offset="-40">Portfolio</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link scroll" href="#faq" data-scroll-offset="-60">FAQ</a>
               </li>
@@ -133,42 +134,48 @@
     </header>
     <!-- ***** Header End ***** -->
 
-    <!-- ***** Welcome Area Start ***** -->
+    <!-- ***** Welcome Area (hero) Start ***** -->
     <section id="hero" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center hero-column">
+          <div class="col-12 col-md-4 order-2 order-md-1 image-column">
+            <!-- Welcome Thumb -->
+            <div class="welcome-thumb mx-auto">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/ezfy-proof-mobile-up.jpg">
+                <img class="animation--float" src="img/pixel_quite_black_portrait_trim_up.png"
+                  alt="Top 1 rated Shopify Expert in the official Shopify forums.">
+              </picture>
+
+            </div>
+          </div>
           <!-- Welcome Intro Start -->
-          <div class="col-12 ">
-            <div class="welcome-intro">
-              <h1 class="text-white">
-                Shopify store owner looking for an experienced developer?
-              </h1>
-              <h3 class="hero-subtitle text-white my-4">
+          <div class="col-12 col-md-8 order-1 order-md-2 text-column">
+            <div class="welcome-intro px-0 px-lg-4">
+              <h1 class="text-white font-italic mb-2 mb-md-3"><span class="animation--gradient-text">Top #1</span> Rated
+                Shopify Expert</h1>
+              <h3 class="text-white"><span style="display:block;margin-bottom: -12px;margin-top:9px;">at the official
+                  Shopify forums.
+                </span><br>
                 <span>
-                  Additional features, development tweaks, custom sections, bug
-                  fixes.
-                </span>
-                <span>
-                  Have a reliable programmer to quickly attend all of your Shopify
-                  website
-                  needs.
-                </span>
-              </h3>
+                  More than 25 public recommendations, 180+ Shopify merchants helped.
+                </span></h3>
+              <p class="text-white mt-3 mb-4"><span>Additional features, development tweaks, custom sections, bug fixes.
+                </span><br><span>Hire one of the best Shopify developers to quickly attend all of your
+                  technical needs.</span></p>
+
+
               <!-- Store Buttons -->
               <div class="button-group store-buttons d-flex">
                 <a type="submit" class="btn custom-btn text-uppercase scroll" href="#about" data-scroll-offset="-60">Get
                   started</a>
                 <!-- <button type="submit" class="btn custom-btn text-uppercase">Reviews</button>
-                  <a href="#">
-                    <img src="img/icon/app-store.png" alt="" />
-                  </a> -->
+                                <a href="#">
+                                  <img src="img/icon/app-store.png" alt="" />
+                                </a> -->
               </div>
-              <!-- <span class="d-inline-block text-white fw-3 font-italic mt-3"
-                  >Available on iPhone, iPad and all Android devices</span
-                > -->
             </div>
           </div>
-
         </div>
       </div>
       <!-- Shape Bottom -->
@@ -241,9 +248,113 @@
     <!-- ***** Features Area End ***** -->
 
 
+    <!-- ***** Reviews Start ***** -->
+    <section id="reviews" class="section screenshots-area  ptb_50">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7">
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+              <span class="d-inline-block rounded-pill shadow-sm fw-5 px-4 py-2 mb-3">
+                <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -28 512.001 512" style="
+    width: 15px;
+">
+                  <path
+                    d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0">
+                  </path>
+                </svg>
+                <span class="text-primary">Customers'</span>
+                Recommendations
+              </span>
+              <h2 class="text-capitalize">
+                Reviews
+              </h2>
+              <p class="d-sm-block mt-4">
+                For your convenience here's a compilation of a few of our customers testimonials. <br>Yet you can find
+                much
+                more
+                in
+                our <a class="custom-link" target="_blank" href="https://fb.com/ezfyforshopify/reviews">official
+                  Facebook
+                  page</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- App Screenshot Slider Area -->
+            <div class="app-screenshots">
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a href="https://www.facebook.com/annadnv/posts/10161291180020618" target="_blank"><img class="lazyload"
+                    data-src="img/reviews/r1.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=465128090696487&id=100015978994970"
+                  target="_blank"><img class="lazyload" data-src="img/reviews/r2.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/ron.bercovitch/posts/10161454417070285"><img
+                    data-lazy="img/reviews/r3.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/shawn.pansiri/posts/2443221389022677"><img
+                    data-lazy="img/reviews/r4.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/csegervall/posts/10155865648326714"><img
+                    data-lazy="img/reviews/r5.jpg" alt="" /></a>
+              </div>
+
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/nathanngo21/posts/10155898793046436"><img
+                    data-lazy="img/reviews/r6.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a href="https://www.facebook.com/ibraheem.nadeem/posts/10161783472635352" target="_blank"><img
+                    data-lazy="img/reviews/r7.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/wesdwa/posts/2581923468495155"><img
+                    data-lazy="img/reviews/r8.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/jeffreyprichardson/posts/10212580477741031"><img
+                    data-lazy="img/reviews/r9.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/brogan.domaschenz/posts/2094168197296835"><img
+                    data-lazy="img/reviews/r10.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/daniel.walker.9843/posts/3406178189405829"><img
+                    data-lazy="img/reviews/r11.jpg" alt="" /></a>
+              </div>
+              <!-- Single Screenshot Item -->
+              <div class="single-screenshot">
+                <a target="_blank" href="https://www.facebook.com/Jay.ripper1990/posts/10156444786948231"><img
+                    data-lazy="img/reviews/r12.jpg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Reviews End ***** -->
 
     <!-- ***** Portfolio Area Start ***** -->
-    <section id="portfolio" class="section blog-area ptb_100">
+    <section id="portfolio" class="section blog-area  bg-gray ptb_50">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-7">
@@ -780,113 +891,8 @@
     <!-- ***** Portfolio Area End ***** -->
 
 
-    <!-- ***** Reviews Start ***** -->
-    <section id="reviews" class="section screenshots-area ptb_25">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7">
-            <!-- Section Heading -->
-            <div class="section-heading text-center">
-              <span class="d-inline-block rounded-pill shadow-sm fw-5 px-4 py-2 mb-3">
-                <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -28 512.001 512" style="
-    width: 15px;
-">
-                  <path
-                    d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0">
-                  </path>
-                </svg>
-                <span class="text-primary">Customers'</span>
-                Recommendations
-              </span>
-              <h2 class="text-capitalize">
-                Reviews
-              </h2>
-              <p class="d-sm-block mt-4">
-                For your convenience here's a compilation of a few of our customers testimonials. <br>Yet you can find
-                much
-                more
-                in
-                our <a class="custom-link" target="_blank" href="https://fb.com/ezfyforshopify/reviews">official
-                  Facebook
-                  page</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <!-- App Screenshot Slider Area -->
-            <div class="app-screenshots">
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a href="https://www.facebook.com/annadnv/posts/10161291180020618" target="_blank"><img class="lazyload"
-                    data-src="img/reviews/r1.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a href="https://www.facebook.com/permalink.php?story_fbid=465128090696487&id=100015978994970"
-                  target="_blank"><img class="lazyload" data-src="img/reviews/r2.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/ron.bercovitch/posts/10161454417070285"><img
-                    data-lazy="img/reviews/r3.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/shawn.pansiri/posts/2443221389022677"><img
-                    data-lazy="img/reviews/r4.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/csegervall/posts/10155865648326714"><img
-                    data-lazy="img/reviews/r5.jpg" alt="" /></a>
-              </div>
-
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/nathanngo21/posts/10155898793046436"><img
-                    data-lazy="img/reviews/r6.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a href="https://www.facebook.com/ibraheem.nadeem/posts/10161783472635352" target="_blank"><img
-                    data-lazy="img/reviews/r7.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/wesdwa/posts/2581923468495155"><img
-                    data-lazy="img/reviews/r8.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/jeffreyprichardson/posts/10212580477741031"><img
-                    data-lazy="img/reviews/r9.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/brogan.domaschenz/posts/2094168197296835"><img
-                    data-lazy="img/reviews/r10.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/daniel.walker.9843/posts/3406178189405829"><img
-                    data-lazy="img/reviews/r11.jpg" alt="" /></a>
-              </div>
-              <!-- Single Screenshot Item -->
-              <div class="single-screenshot">
-                <a target="_blank" href="https://www.facebook.com/Jay.ripper1990/posts/10156444786948231"><img
-                    data-lazy="img/reviews/r12.jpg" alt="" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ***** Reviews End ***** -->
-
     <!-- ***** FAQ Area Start ***** -->
-    <section id="faq" class="section faq-area ptb_100 bg-gray">
+    <section id="faq" class="section faq-area ptb_100">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-7">
@@ -913,16 +919,15 @@
                       <div class="card-header">
                         <h2 class="mb-0">
                           <button class="btn p-2" type="button" data-toggle="collapse" data-target="#payment">
-                            Payment is before or after the development?
+                            How much do you charge?
                           </button>
                         </h2>
                       </div>
                       <div id="payment" class="collapse show" data-parent="#apolo-accordion">
                         <!-- Card Body -->
-                        <div class="card-body">After! Once all the tasks are finished we'll send you an invoice with the
-                          total price in EUR, USD or AUD depending on your preference. We kindly ask that payments are
-                          fixed within 24 hours upon the completion of
-                          the project.</div>
+                        <div class="card-body">Every project has different needs which reflects a different price point.
+                          Feel free to <a class="scroll custom-link" href="#contact">send us an email</a> and request
+                          a free quote!</div>
                       </div>
                     </div>
                     <!-- Single Accordion Item -->
@@ -939,8 +944,7 @@
                         <!-- Card Body -->
                         <div class="card-body">Absolutely! In case anything we coded breaks you can get in touch with us
                           within 7 days and we'll get back to you within 24 hours to fix it with
-                          no extra charges. Worth noticing that modifications
-                          are not included in the free support.</div>
+                          no extra charges.</div>
                       </div>
                     </div>
                     <!-- Single Accordion Item -->
